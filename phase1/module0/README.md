@@ -1,4 +1,4 @@
-# Set up your environment
+# Set up environment
 
 ## Install VsCode
 ```
