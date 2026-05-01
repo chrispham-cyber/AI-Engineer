@@ -1,0 +1,362 @@
+# ----------------------------------------------------------
+# SECRETS, CREDENTIALS, API KEYS — NEVER COMMIT
+# ----------------------------------------------------------
+
+# Environment files
+.env
+.env.*
+!.env.example          
+!.env.template
+*.env
+.envrc
+
+# Generic secret files
+secrets.*
+*secret*
+*secrets*
+*.secret
+credentials.*
+*credentials*
+*.credentials
+config.local.*
+local.settings.json
+
+# API key files
+*api_key*
+*apikey*
+*api-key*
+*.apikey
+api_keys.*
+keys.json
+keys.yaml
+keys.yml
+keys.txt
+tokens.*
+*.token
+auth.json
+auth.yaml
+
+# Cryptographic keys and certificates
+*.pem
+*.key
+*.cer
+*.crt
+*.csr
+*.der
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+id_ecdsa
+id_ed25519
+*.ppk
+known_hosts
+authorized_keys
+
+# SSH and GPG
+.ssh/
+.gnupg/
+*.gpg
+*.asc
+*.sig
+
+# Cloud provider credentials
+.aws/
+.aws/credentials
+.aws/config
+aws-credentials*
+*.aws
+.azure/
+.gcp/
+gcloud-key*.json
+service-account*.json
+service_account*.json
+firebase-adminsdk*.json
+google-credentials*.json
+*-service-account.json
+
+# Anthropic / OpenAI / HuggingFace local configs
+.anthropic/
+.openai/
+.huggingface/
+.cohere/
+~/.cache/huggingface/
+
+# Database connection strings & credential URLs
+*.dsn
+database.yml
+database.json
+db_config.*
+connection_strings.*
+
+# Kubernetes / Docker secrets
+kubeconfig
+*.kubeconfig
+docker-compose.override.yml
+.docker/config.json
+
+
+# ----------------------------------------------------------
+# PYTHON
+# ----------------------------------------------------------
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+virtualenv/
+.python-version
+
+# Package managers
+.pipenv/
+Pipfile.lock
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Linters / formatters caches
+.pylint.d/
+.pylintrc.local
+
+
+# ----------------------------------------------------------
+# JUPYTER / IPYTHON
+# ----------------------------------------------------------
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ----------------------------------------------------------
+# ML / AI SPECIFIC
+# ----------------------------------------------------------
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.tflite
+*.pb
+*.bin
+*.gguf
+*.msgpack
+models/
+checkpoints/
+saved_models/
+weights/
+artifacts/
+
+# Datasets
+data/raw/
+data/interim/
+data/processed/
+data/external/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+!data/sample/**
+!data/examples/**
+
+# Experiment tracking
+mlruns/
+mlartifacts/
+wandb/
+.neptune/
+.aim/
+lightning_logs/
+tb_logs/
+tensorboard/
+runs/
+
+# Cached embeddings / vector stores
+.chroma/
+chroma_db/
+chroma/
+.faiss/
+faiss_index/
+.lancedb/
+.qdrant/
+qdrant_storage/
+
+# Hugging Face caches
+.cache/
+.huggingface/
+transformers_cache/
+
+# DVC
+.dvc/cache
+.dvc/tmp
+
+
+# ----------------------------------------------------------
+# EDITORS / IDEs
+# ----------------------------------------------------------
+
+# VSCode / Cursor
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime / Vim / Emacs
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.netrwhist
+\#*\#
+.\#*
+
+# Cursor / AI editor specific
+.cursor/
+.continue/
+
+
+# ----------------------------------------------------------
+# OPERATING SYSTEMS
+# ----------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ----------------------------------------------------------
+# LOGS / TEMPORARY FILES
+# ----------------------------------------------------------
+
+logs/
+*.log
+log/
+*.out
+*.err
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+
+# ----------------------------------------------------------
+# WEB / DEPLOYMENT (if your project has a frontend or API)
+# ----------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+.nuxt/
+.streamlit/secrets.toml
+.gradio/
+
+
+# ----------------------------------------------------------
+# LOCAL CONFIG / OVERRIDES
+# ----------------------------------------------------------
+
+local.py
+local_settings.py
+settings_local.py
+*.local
+config.local.yaml
+config.local.json
+.local/
