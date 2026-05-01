@@ -9,4 +9,5 @@ touch file.py          # create empty file (Mac/Linux)
 rm file.py             # delete file (be careful — no undo)
 mv old.py new.py       # rename or move
 cp file.py copy.py     # copy
+exit or bye or Ctrl+D  # close terminal
 ```
