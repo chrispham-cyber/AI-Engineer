@@ -1,5 +1,5 @@
 # Virtual environments
-A virtual environment isolates project dependencies. Without one, you'll eventually break your system Python. 
+A virtual environment isolates project dependencies. Without it, you'll eventually break your system Python. 
 
 *Make a venv for every project.*
 
