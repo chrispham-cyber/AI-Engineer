@@ -99,7 +99,7 @@ Julia 1.x.x
 - Julia: Math foundations
 
 # Exercises
-- Run the [verification script](phase0/module0/scripts/verify.py) and fix any failures
+- Run the [verification script](scripts/verify.py) and fix any failures
 - Write a "hello world" in all four languages and run each one
 
 To run to each language:
