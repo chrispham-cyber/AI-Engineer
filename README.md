@@ -1,7 +1,7 @@
 # AI Journey From Scratch
 
 ## Phase 0: Setup and Tooling
-- Module 0: Dev Environment
+- Module 0: [Dev Environment](phase0/module0)
 
 ## Phase 1: Math Foundations
 

@@ -99,6 +99,14 @@ Julia 1.x.x
 - Julia: Math foundations
 
 # Exercises
-- Run the verification script and fix any failures
-- Create a Python virtual environment and install PyTorch
+- Run the [verification script](phase0/module0/scripts/verify.py) and fix any failures
 - Write a "hello world" in all four languages and run each one
+
+To run to each language:
+```
+python3 hello.py
+julia hello.jl
+npx tsx hello.ts
+rustc hello.rs 
+./hello.rs
+```
