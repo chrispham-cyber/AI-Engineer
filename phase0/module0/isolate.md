@@ -5,7 +5,7 @@ A virtual environment isolates project dependencies. Without it, you'll eventual
 
 ```
 # Create one
-python3 -m venv venv
+uv venv
 
 # Activate it
 source venv/bin/activate         # Mac/Linux

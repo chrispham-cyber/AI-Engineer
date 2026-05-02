@@ -1,11 +1,9 @@
 # AI Journey From Scratch
 
-## Phase 1: Foundations
-- Module 0: environment setup
-- Module 1: Python core: types, data structures, control flow, functions, classes, error handling, file I/O
-- Module 2: Python for data work: comprehensions, lambdas, type hints, generators
-- Module 3: Math foundations: linear algebra, calculus, probability — intuition-focused
-- Module 4: Capstone project that ties everything together
+## Phase 0: Setup and Tooling
+- Module 0: Dev Environment
+
+## Phase 1: Math Foundations
 
 ## Phase 2: Data Foundations
 
