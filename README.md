@@ -2,6 +2,7 @@
 
 ## Phase 0: Setup and Tooling
 - Module 0: [Dev Environment](phase0/module0)
+- Module 1: [APIs](phase0/module1)
 
 ## Phase 1: Math Foundations
 
