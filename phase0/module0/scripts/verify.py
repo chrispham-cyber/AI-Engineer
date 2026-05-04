@@ -12,6 +12,16 @@ CHECKS = [
     ("Rust (cargo)", lambda: shutil.which("cargo") is not None, None),
 ]
 
+GPU_CHECKS = [
+    ("PyTorch", lambda: __import__("torch"), None),
+    (
+        "MPS",
+        lambda: __import__("torch").backends.mps.is_available(),
+        lambda: "M-Series GPU Active" if __import__("torch").backends.mps.is_available() else "Not available",
+    ),
+]
+
+
 def run_check(name, check_fn, detail_fn=None):
     try:
         result = check_fn()
@@ -37,7 +47,15 @@ def main():
     passed = sum(run_check(name, fn, detail) for name, fn, detail in CHECKS)
     total = len(CHECKS)
 
+    print("\nGPU (optional):")
+    gpu_passed = sum(run_check(name, fn, detail) for name, fn, detail in GPU_CHECKS)
+    gpu_total = len(GPU_CHECKS)
+
     print(f"\nResult: {passed}/{total} core checks passed", end="")
+    if gpu_passed > 0:
+        print(f", {gpu_passed}/{gpu_total} GPU checks passed")
+    else:
+        print(" (no GPU — that's fine, most lessons work on CPU)")
 
     if passed == total:
         print("\nYou're ready. Start with Phase 1.\n")

@@ -92,6 +92,55 @@ Expect output:
 Julia 1.x.x
 ```
 
+## GPU setup
+I don't have NVIDIA so I will use Macbook's GPU instead.
+```
+# Check system hardware
+system_profiler SPDisplaysDataType | grep "Total Number of Cores"
+
+# Install PyTorch with MPS
+uv pip install torch torchvision torchaudio
+```
+
+To verify:
+```
+import torch
+
+print(f"MPS available: {torch.backends.mps.is_available()}")
+
+if torch.backends.mps.is_available():
+    device = torch.device("mps")
+    print("GPU acceleration is active via Metal Performance Shaders.")
+    
+    x = torch.ones(1, device=device)
+    print(f"Test tensor on device: {x.device}")
+else:
+    print("MPS not found. Ensure you are on macOS 12.3+ and using ARM64 Python.")
+
+```
+
+Expect output:
+```
+=== AI Engineering from Scratch — Environment Check ===
+
+Core:
+  [PASS] Python 3.10+
+  [PASS] NumPy
+  [PASS] Matplotlib
+  [PASS] Jupyter
+  [PASS] Git
+  [PASS] Node.js
+  [PASS] Rust (cargo)
+
+GPU (optional):
+  [PASS] PyTorch
+  [PASS] MPS (M-Series GPU Active)
+
+Result: 7/7 core checks passed, 2/2 GPU checks passed
+
+You're ready. Start with Phase 1.
+```
+
 # Use Cases:
 - Python: ML, DL, NLP, Vision, Audio, LLMs
 - TypeScript: Tools, Agents, Swarms, Infra
