@@ -29,7 +29,7 @@ jupyter lab
 | `Shift+Enter` | Run Cell |
 | `Command+B` | Show/Hide Sidebar |
 | `Command+Shift+L` | Open new terminal |
-| `Command+Shift+[ or ] | Switch terminal |
+| `Command+Shift+[ or ]` | Switch terminal |
 
 ## Cell types
 ```
@@ -132,7 +132,7 @@ display(Image(filename="notebook_plot.png"))
 
 output:
 
-![](img/noise.png)
+![](img/notebook_plot.png)
 
 ## Use It
 
