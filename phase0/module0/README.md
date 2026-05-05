@@ -1,5 +1,8 @@
 # Set up environment
 
+## Why?
+If we set up environment correctly, we don't need to spend hours debugging import errors, version conflicts, and missing GPU configurations.
+
 ## Install basic tools
 ```
 brew install curl wget git

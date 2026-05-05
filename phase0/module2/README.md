@@ -1,6 +1,9 @@
 # VsCode + Jupyter Notebook
 
-> Every AI paper, tutorial, and Kaggle competition uses Jupyter notebooks. They let you run code in pieces, see outputs inline, mix code with explanations, and iterate fast. If you try to learn AI without notebooks, you're doing math homework without scratch paper.
+
+## Why? 
+
+Every AI paper, tutorial, and Kaggle competition uses Jupyter notebooks. They let you run code in pieces, see outputs inline, mix code with explanations, and iterate fast. If you try to learn AI without notebooks, you're doing math homework without scratch paper.
 
 ## Install VsCode
 ```
@@ -43,7 +46,7 @@ Output:
 (np.float64(0.013735607755244222), np.float64(1.0060696949755465))
 ```
 
-> Markdown cells render formatted text. Use them to document what you're doing and why. Supports headers, bold, italic, LaTeX math ($E = mc^2$), tables, and images.
+Markdown cells render formatted text. Use them to document what you're doing and why. Supports headers, bold, italic, LaTeX math ($E = mc^2$), tables, and images.
 
 ## Magic commands
 

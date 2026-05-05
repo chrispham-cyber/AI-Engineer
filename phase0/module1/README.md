@@ -1,5 +1,8 @@
 # API Call
 
+## Why?
+We need to know how API keys work, how to store them safely, and how to make your first API call.
+
 ## Install Ollama
 ```
 curl -fsSL https://ollama.com/install.sh | sh
@@ -7,7 +10,9 @@ ollama pull qwen3-coder:30b
 ```
 
 ## [Python](scripts/api.py)
+
 ## [TypeScript](scripts/api.ts)
+
 ## Raw HTTP (No SDK)
 ```
 curl -s http://localhost:11434/api/generate -d '{
