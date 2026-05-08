@@ -9,7 +9,7 @@ Every AI project starts with data. You need to find datasets, download them, con
 pip3 install datasets huggingface_hub
 ```
 
-After installing, run [test](/test.py)
+After installing, run [test](test.py)
 
 Expect output:
 ```
