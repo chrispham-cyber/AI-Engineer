@@ -5,6 +5,8 @@
 - Module 1: [APIs Call](phase0/module1)
 - Module 2: [Familiar with JupyterLab](phase0/module2)
 - Module 3: [Set up Python Environment](phase0/module3)
+- Module 4: [Docker](phase0/module4)
+- Module 5: [Data Management](phase0/module5)
 
 ## Phase 1: Math Foundations
 
