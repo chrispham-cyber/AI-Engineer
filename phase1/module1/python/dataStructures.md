@@ -250,4 +250,3 @@ list(zip(names, ages))  # [("Ian", 25), ("Henry", 30)]
 - [Reverse a dictionary](../exercises/.py)
 - [Top 3 Most Frequent Words](../exercises/.py)
 - [Two numbers whose sum equals the target.](../exercises/.py)
-- [Word Frequency from File](../exercises/.py)
