@@ -185,8 +185,8 @@ comment
 ```
 
 ## Exercises
-### [FizzBuzz](../exercises/fizzBuzz.py)
-### [BMI](../exercises/bmi.py)
-### [Vowels](../exercises/vowels.py)
-### [Prime](../exercises/prime.py)
-### [Reverse String](../exercises/reverseString.py)
+- [FizzBuzz](../exercises/fizzBuzz.py)
+- [BMI](../exercises/bmi.py)
+- [Vowels](../exercises/vowels.py)
+- [Prime](../exercises/prime.py)
+- [Reverse String](../exercises/reverseString.py)

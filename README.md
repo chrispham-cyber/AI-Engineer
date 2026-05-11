@@ -8,7 +8,11 @@
 - Module 4: [Docker](phase0/module4)
 - Module 5: [Data Management](phase0/module5)
 
-## Phase 1: Math Foundations
+## Phase 1: Foundations
+- Module 1: [Python](phase1/module1)
+	- Module 1.1: [Basics](python/basics.md)
+	- Module 1.2: [Data Structures](python/dataStructures.md)
+- Module 2: [Math](phase1/module2)
 
 ## Phase 2: Data Foundations
 
