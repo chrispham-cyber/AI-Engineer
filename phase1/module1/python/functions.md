@@ -77,6 +77,11 @@ import random                # random
 import re                    # regex
 from pathlib import Path     # path (modern)
 from collections import Counter, defaultdict, deque
+import itertools	     # advanced iteration utilities
+import functools	     # higher-order functions and functional programming
 ```
 
 ## Exercises
+- [Stats](../exercises/stats.py)
+- [ConvertUnit](../exercises/convertUnit.py)
+- [Valid Email](../exercises/email.py)
