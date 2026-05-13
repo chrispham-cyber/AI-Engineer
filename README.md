@@ -12,6 +12,7 @@
 - Module 1: [Python](phase1/module1)
 	- Module 1.1: [Basics](phase1/module1/python/basics.md)
 	- Module 1.2: [Data Structures](phase1/module1/python/dataStructures.md)
+	- Module 1.3: [Functions](phase1/module1/python/functions.md)
 - Module 2: [Math](phase1/module2)
 
 ## Phase 2: Data Foundations
