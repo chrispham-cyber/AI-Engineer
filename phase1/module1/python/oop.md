@@ -136,3 +136,50 @@ points = {p1: "first", p2: "second"}
 | `__getitem__` | `obj[i]` |
 | `__contains__` | `x in obj` |
 | `__call__` | `obj()` (callable) |
+
+# Inheritance 
+```
+class Animal: 
+	def __init__(self, name: str): 
+		self.name = name 
+
+	def speak(self): 
+		print(f"{self.name} makes a sound")
+
+class Dog(Animal): # Dog inherits Animal 
+	def speak(self): # override 
+		print(f"{self.name} says Woof!") 
+
+	def fetch(self): # new method 
+		print(f"{self.name} fetches the ball")
+
+class Puppy(Dog): # Multi-level 
+	def __init__(self, name: str, age: int): 
+		super().__init__(name) # call parent's __init__ 
+		self.age = age 
+
+	def speak(self): 
+		super().speak() # call method parent 
+		print("(in a tiny voice)")
+
+buddy = Dog("Buddy")
+buddy.speak() # Buddy says Woof!
+buddy.fetch() # Buddy fetches the ball
+
+mini = Puppy("Mini", 1)
+mini.speak() # Mini says Woof! (in a tiny voice)
+```
+
+### isinstance & issubclass
+| Funcion                  | Check if                          |
+| ------------------------ | --------------------------------- |
+| `isinstance(obj, cls)`   | Object belongs to which class?    |
+| `issubclass(cls1, cls2)` | Class inherit from another class? |
+
+## Properties 
+
+## @classmethod và @staticmethod
+
+## Dataclasses
+
+## Pydantic
