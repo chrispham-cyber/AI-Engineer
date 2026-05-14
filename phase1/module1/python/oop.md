@@ -178,8 +178,65 @@ mini.speak() # Mini says Woof! (in a tiny voice)
 
 ## Properties 
 
+Allows internal changes without breaking the external API.
+
+```
+class User:
+    @property
+    def name(self):
+        return "Alice"
+
+u = User()
+
+# With @property
+print(u.name)
+
+# Without @property
+print(u.get_name())
+```
+
 ## @classmethod và @staticmethod
+| Type            | Priority |
+| --------------- | ---------------- |
+| Normal Method   | `self`           |
+| `@classmethod`  | `cls`            |
+| `@staticmethod` | nothing          |
 
 ## Dataclasses
+```
+# Without @dataclass
+class Point:
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
+    
+    def __repr__(self):
+        return f"Point(x={self.x}, y={self.y})"
+    
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+```
+
+```
+# # With @dataclass
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: float
+    y: float
+
+p = Point(1.0, 2.0)
+print(p)                # Point(x=1.0, y=2.0)
+print(p == Point(1, 2)) # True
+```
 
 ## Pydantic
+`uv pip install pydantic`
+- Data validation
+- Parsing data
+- Serialization/deserialization
+- Type enforcement
+- Schema generation
+
+## Exercises
