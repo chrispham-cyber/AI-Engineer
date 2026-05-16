@@ -240,3 +240,7 @@ print(p == Point(1, 2)) # True
 - Schema generation
 
 ## Exercises
+- [Bank Account](../exercises/bank.py)
+- [Vector 3D](../exercises/vector.py)
+- [Shape Inheritance](../exercises/inher.py)
+- [Library System](../exercises/library.py)
