@@ -85,3 +85,4 @@ def process(data):
 ```
 
 ## Exercises
+- [URL Status Parallel Check](../exercises/urlCheck.py)
