@@ -122,3 +122,58 @@ np.trace(A)
 | `0`         | singular, không invert được |
 | `> 0`        | orientation preserved       |
 | `< 0`        | orientation flipped         |
+
+## Broadcasting 
+```
+A = np.array([[1, 2, 3], [4, 5, 6]])    
+v = np.array([10, 20, 30])              
+
+A + v
+# [[11, 22, 33],
+#  [14, 25, 36]]
+# v is "broadcast" across every row
+```
+
+Broadcasting Rules:
+- Compare shapes from right to left
+- For each dimension, they must be:
+  - Equal, OR
+  - One of them is 1, OR
+  - One of them is missing
+
+## Eigenvalues ​​& Eigenvectors
+Intuition: An eigenvector of a matrix A is a vector that, when multiplied by A, is merely stretched or shrunk (its direction does not change). The eigenvalue is the scaling factor.
+
+```
+A = np.array([[2, 0], [0, 3]])
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+print(eigenvalues)    
+print(eigenvectors)
+```
+
+**PCA** utilizes eigenvalues ​​to identify the principal axes of the data.
+
+Spectral clustering, PageRank, etc...
+
+## PCA — Practical Applications
+```
+from sklearn.decomposition import PCA
+import numpy as np
+
+# Simulate 100-dimensional data
+X = np.random.randn(1000, 100)
+
+# Reduce to 2 dimensions
+pca = PCA(n_components=2)
+X_2d = pca.fit_transform(X)
+
+print(X_2d.shape)    # (1000, 2)
+print(pca.explained_variance_ratio_)
+# The proportion of variance retained
+```
+
+Used for:
+- Visualizing high-dimensional data
+- Accelerating model training
+- Noise reduction
